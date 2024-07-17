@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+
+
+.navbar {
+    background-image: url(footer2.jpg);
+    height: 100px;
+    width: 100%;
+    background-color: rgb(221, 217, 217);
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    position: absolute;
+    top: 0;
+}
+
+.logo img {
+    height: 100px;
+    width: 280px;
+}
+
+.nav {
+    margin-left: 200px;
+    margin-right: 20px;
+    
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 70px;
+
+}
+
+.nav ul li {
+
+    position: relative;
+}
+
+.nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color:black;
+    font-size: 22px;
+}
+
+.nav ul li a:hover {
+    color: orangered;
+}
+
+.nav ul li a .fa-solid {
+    margin-left: 4px;
+    transition: transform 0.5s ease;
+}
+
+.nav ul li:hover > a .fa-solid {
+    transform: rotate(180deg);
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+     width: 150px; 
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin-top: 10px;
+    border-bottom: rgb(247, 242, 242) 0.5px solid;
+    
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 16px;
+}
+
+.sub-menu li a:hover {
+    color: orangered;
+}
+
+.nav ul li input[type="text"] {
+    padding: 7px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+}
+
+   
+
+.login-container {
+    background-image: linear-gradient(rgb(252, 252, 113),rgb(157, 255, 209));
+    width:30%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top:150px;
+    margin-left:450px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius:8px;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius:15px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:black;
+}
+
+#message {
+    margin-top: 15px;
+    color: red;
+}
+
+.dot{
+    width:100px;
+    height:30px;
+    margin-left:620px;
+    margin-top:20px;
+}
+.footer{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 200vh;
+    border: black solid 1px;
+    margin-top: 50px;
+    padding-left: 50px;
+    display:flex;
+    column-gap: 250px;
+    padding-top: 50px;
+    color: white;
+}
+.footer li{
+    list-style: none;
+    margin-top: 22px;
+    font-size: 20px;
+}
+.footer li a{
+    text-decoration: none;
+    color:black;
+    
+}
+.footer li a:hover{
+    color: orangered;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/images/footer2.jpg" height="80px" width="280px">
+            </div>
+            <div class="nav">
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                  <li><a href="#">Trending <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-menu">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Tutorials</a></li>
+
+                </ul>
+            </li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><input type=text name="search" placeholder= "     search"><i class="fa-solid fa-magnifying-glass" style="position: relative; padding:6px;"></i></li>
+                 </ul>
+            </div>
+        </div>
+
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <div class="dot">
+    <a href="Communityform.html" id="sss.html"><button>Previous</button></a>
+   </div>
+
+
+    <div class="footer">
+        <div class="footer1">
+            <img src="/images/footer2.jpg" height="70px" width="150px"> <br><br>
+            <p>We are here to help you.</p>
+        </div>
+        <div class="footer2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+</div>
+        <div class="footer3">
+            <li><a href="#">Product Comparisions</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Community Forum</a></li>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const username = document.getElementById('username').value;
+
+    const password = document.getElementById('password').value;
+
+    const message = document.getElementById('message');
+    
+   
+   
+ const validUsername = 'chandu';
+    const validPassword = 'chandu##143';
+    
+    if (username === validUsername && password === validPassword) {
+     message.style.color = 'green';
+        message.textContent = alert('Login successful!');
+    } else {
+     message.style.color = 'red';
+        message.textContent =alert('Invalid username or password.');
+    }
+     });
+    </script>
+</body>
+</html>
